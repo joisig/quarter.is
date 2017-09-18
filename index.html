@@ -134,5 +134,23 @@
                     elements[i].onclick = function() {showMailingPopUp()};
                 }
             </script>
+
+            <!-- Start of Verloop Livechat Script -->
+            <script type="text/javascript">
+            (function(w, d, s, u) {
+            	w.Verloop = function(c) { w.Verloop._.push(c) }; w.Verloop._ = []; w.Verloop.url = u;
+            	var h = d.getElementsByTagName(s)[0], j = d.createElement(s);
+            	j.async = true; j.src = 'https://quarter.verloop.io/packages/verloop_livechat/assets/verloop-livechat.min.js?_=201702160944';
+            	h.parentNode.insertBefore(j, h);
+            })(window, document, 'script', 'https://quarter.verloop.io/livechat');
+
+            // To set a department, uncomment following line
+            // Verloop(function(){
+            // 	this.setDepartment("paste_department_id_here");
+            // });
+
+            </script>
+            <!-- End of Verloop Livechat Script -->
+
 	</body>
 </html>
