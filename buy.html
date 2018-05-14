@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>SaaS Quarter - Purchase Subscriptions, Passes or Credits</title>
+		<title>SaaS Quarter - Purchase Subscriptions, Passes or Vouchers</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -28,7 +28,7 @@
 		<!-- Main -->
         <div id="header">
             <h1>Buy from us!</h1>
-            <p>On this page, you can buy a membership subscription, week pass, or credits for our honor shop and/or meeting rooms.</p>
+            <p>On this page, you can buy a membership subscription, week pass, vouchers for our honor shop and meeting room access.</p>
         </div>
 		<div id="main">
             <div class="box container">
@@ -46,15 +46,16 @@
                 </section>
                 <section>
                     <div class="box content">
-                        <h3>50 Credits in our Honor Shop</h3>
-                        <p>50 credits for you to buy from our honor shop, please mark down the credits you use on the shop sheet.</p>
+                        <h3>50 Vouchers in our Honor Shop</h3>
+                        <p>50 vouchers for you to buy from our honor shop, please mark down the vouchers you use on the shop sheet.</p>
                         <ul class="actions"><li>
                             <form action="https://secure.dalpay.is/cgi-bin/order2/processorder1.pl" method="POST" csrftoken="off">
                                 <input type="hidden" name="MerchantID" value="180503">
                                 <input type="hidden" name="PageID" value="1">
                                 <input type="hidden" name="item1_qty" value="1">
-                                <input type="hidden" name="item1_desc" value="50 credits in our honor shop">
+                                <input type="hidden" name="item1_desc" value="50 vouchers in our honor shop">
                                 <input type="hidden" name="item1_price" value="5000.00">
+								<input type="hidden" name="sales_tax_amount" value="495.50">
                                 <input name="submit" type="submit" value="Buy from DalPay">
                             </form>
                         </li></ul>
@@ -62,15 +63,16 @@
                 </section>
                 <section>
                     <div class="box content">
-                        <h3>Book a meeting room an extra 1 hour</h3>
-                        <p>A 60-minute credit for our meeting rooms, usable on top of your allotment via membership, 30 or 60 minutes at a time.</p>
+                        <h3>Book a meeting room for 60 minutes</h3>
+                        <p>Book a meeting room for 60 minutes (or twice for 30 minutes), usable on top of your allotment via membership.</p>
                         <ul class="actions"><li>
                             <form action="https://secure.dalpay.is/cgi-bin/order2/processorder1.pl" method="POST" csrftoken="off">
                                 <input type="hidden" name="MerchantID" value="180503">
                                 <input type="hidden" name="PageID" value="1">
                                 <input type="hidden" name="item1_qty" value="1">
-                                <input type="hidden" name="item1_desc" value="60 minute meeting room credit">
+                                <input type="hidden" name="item1_desc" value="Book a meeting room for 60 minutes">
                                 <input type="hidden" name="item1_price" value="5000.00">
+								<input type="hidden" name="sales_tax_amount" value="967.74">
                                 <input name="submit" type="submit" value="Buy from DalPay">
                             </form>
                         </li></ul>
@@ -88,6 +90,7 @@
                             <input type="hidden" name="item1_qty" value="1">
                             <input type="hidden" name="item1_desc" value="Drop-in 1-week pass: Common areas only">
                             <input type="hidden" name="item1_price" value="5000.00">
+							<input type="hidden" name="sales_tax_amount" value="967.74">
                             <input name="submit" type="submit" value="Buy from DalPay">
                             </form>
                         </li></ul>
@@ -121,6 +124,7 @@
                                 <input type="hidden" name="item1_price" value="19000.00">
                                 <input type="hidden" name="rebill_desc" value="Subscription (renews monthly, cancel any time)">
                                 <input type="hidden" name="rebill_type" value="monthly-19000">
+								<input type="hidden" name="sales_tax_amount" value="3677.42">
                                 <input name="submit" type="submit" value="Subscribe via DalPay">
                                 </form>
                             </li>
@@ -142,6 +146,7 @@
                                 <input type="hidden" name="item1_price" value="12000.00">
                                 <input type="hidden" name="rebill_desc" value="Subscription (renews monthly, cancel any time)">
                                 <input type="hidden" name="rebill_type" value="monthly-12000">
+								<input type="hidden" name="sales_tax_amount" value="2322.58">
                                 <input name="submit" type="submit" value="Subscribe via DalPay">
                                 </form>
                             </li>
