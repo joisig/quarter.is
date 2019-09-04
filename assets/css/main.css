@@ -30,6 +30,16 @@
 		list-style: none;
 	}
 
+	ol.normal-list, ul.normal-list {
+		list-style: disc outside none;
+	    margin-left: 0;
+	    padding-left: 1em;
+	}
+
+	ol.normal-list li, ul.normal-list li {
+		padding-left: 1em;
+	}
+
 	blockquote, q {
 		quotes: none;
 	}
