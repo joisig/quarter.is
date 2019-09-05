@@ -84,7 +84,7 @@
 
                 <p style="text-align: center">Want to see if you need a VAT representative?</p>
                 <ul class="actions special">
-					<li><a href="#contactus" class="button alt">Get a Free Consultation</a></li>
+					<li><a href="https://meeting.is/ss/showu/quarter#crankwheel-com-showu-launch-button" class="button alt">Get a Free Consultation</a></li>
 				</ul>
             </div>
 
@@ -159,7 +159,7 @@
                 </p>
 
                 <ul class="actions special">
-					<li><a href="#contactus" class="button alt">Get More Details</a></li>
+					<li><a href="https://meeting.is/ss/showu/quarter#crankwheel-com-showu-launch-button" class="button alt">Get More Details</a></li>
 				</ul>
             </div>
 
@@ -174,7 +174,7 @@
                     <li>All reports and summaries you require for your own books</li>
                 </p>
                 <ul class="actions special">
-					<li><a href="#contactus" class="button">Request a Quote</a></li>
+					<li><a href="https://meeting.is/ss/showu/quarter#crankwheel-com-showu-launch-button" class="button">Request a Quote</a></li>
 				</ul>
             </div>
 
@@ -187,7 +187,7 @@
                     <li>We provide other custom consulting as required</li>
                 </p>
                 <ul class="actions special">
-					<li><a href="#contactus" class="button">Request a Quote</a></li>
+					<li><a href="https://meeting.is/ss/showu/quarter#crankwheel-com-showu-launch-button" class="button">Request a Quote</a></li>
 				</ul>
             </div>
 
@@ -196,52 +196,6 @@
 
         <!-- Footer -->
 		<div id="footer">
-            <a name="contactus"></a>
-			<div class="container 75%">
-
-				<header class="major last">
-					<h2>Get a free consultation or quote</h2>
-				</header>
-
-				<p>Please provide your details and we will be in touch quickly.</p>
-
-				<form method="post" action="https://formspree.io/info@quarter.is">
-					<div class="row">
-						<div class="6u 12u(mobilep)">
-							<input type="text" name="name" placeholder="Your name" />
-						</div>
-						<div class="6u 12u(mobilep)">
-							<input type="email" name="email" placeholder="Email address" />
-						</div>
-					</div>
-                    <div class="row">
-						<div class="6u 12u(mobilep)">
-							<input type="text" name="phone" placeholder="Phone number including country code" />
-						</div>
-                        <div class="6u 12u(mobilep)">
-							<select name="service">
-                                <option value="">Select required service</option>
-                                <option value="freeconsult">Free consultation</option>
-                                <option value="vatrep">VAT Rep</option>
-                                <option value="vatrepplus">VAT Rep Plus</option>
-                                <option value="other">Other</option>
-                            </select>
-						</div>
-					</div>
-					<div class="row">
-                        <div class="12u">
-							<textarea name="message" placeholder="Details on your requirements" rows="6"></textarea>
-						</div>
-					</div>
-					<div class="row">
-						<div class="12u">
-							<ul class="actions">
-								<li><input type="submit" value="Send request" /></li>
-							</ul>
-						</div>
-					</div>
-				</form>
-
                 <ul class="copyright">
                     <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
                     <li>Photographs: <a href="https://www.facebook.com/AntonBrinkPhotographer">Anton Brink</a></li>
@@ -259,5 +213,24 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+
+            <script>
+            (function(i,c,a,n,s,h,o,w,u){
+                if(typeof i.showu === 'object'){i.showu.reInitialize()}else{
+                i.showu = {'_q':[]}; i._ishowuSettings={id:'yYa7Td6j',d:a}; s=c.getElementsByTagName('head')[0];
+                h=c.createElement('script');h.async=1; h.type = 'text/javascript'; h.src=a+n; s.appendChild(h);
+                o = ['launch', 'onEvent', 'getCapacity', 'populateFields', 'reInitialize']; function p(f) {i.showu[f] = function()
+                {i.showu._q.push([f].concat(Array.prototype.slice.call(arguments, 0)));};} for (w = 0; w < o.length; w++) {p(o[w]);}}
+                })(window,document,'https://meeting.is','/ss/js/showu_app.js')
+            </script>
+            <script>
+                showu.onEvent('requestDemo', function () {
+                    gtag('event', 'formSubmit', {
+                        'event_category': 'lead',
+                        'event_label': 'vatrep',
+                        'value': 1
+                    });
+                });
+            </script>
 	</body>
 </html>
