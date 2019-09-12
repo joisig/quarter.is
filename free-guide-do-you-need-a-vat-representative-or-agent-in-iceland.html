@@ -107,7 +107,7 @@
 
                 <p style="text-align: center">Want to see if you need a VAT representative?</p>
                 <ul class="actions special">
-					<li><a href="https://meeting.is/ss/showu/quarter#crankwheel-com-showu-launch-button" class="button alt">Get a Free Consultation</a></li>
+					<li><a href="#contactus" class="button alt">Get a Free Consultation</a></li>
 				</ul>
             </div>
 
@@ -182,7 +182,7 @@
                 </p>
 
                 <ul class="actions special">
-					<li><a href="https://meeting.is/ss/showu/quarter#crankwheel-com-showu-launch-button" class="button alt">Get More Details</a></li>
+					<li><a href="#contactus" class="button alt">Get More Details</a></li>
 				</ul>
             </div>
 
@@ -197,7 +197,7 @@
                     <li>All reports and summaries you require for your own books</li>
                 </p>
                 <ul class="actions special">
-					<li><a href="https://meeting.is/ss/showu/quarter#crankwheel-com-showu-launch-button" class="button">Request a Quote</a></li>
+					<li><a href="#contactus" class="button">Request a Quote</a></li>
 				</ul>
             </div>
 
@@ -210,7 +210,7 @@
                     <li>We provide other custom consulting as required</li>
                 </p>
                 <ul class="actions special">
-					<li><a href="https://meeting.is/ss/showu/quarter#crankwheel-com-showu-launch-button" class="button">Request a Quote</a></li>
+					<li><a href="#contactus" class="button">Request a Quote</a></li>
 				</ul>
             </div>
 
@@ -219,6 +219,60 @@
 
         <!-- Footer -->
 		<div id="footer">
+            <a name="contactus"></a>
+                       <div class="container 75%">
+
+                               <header class="major last">
+                                       <h2>Get a free consultation or quote</h2>
+                               </header>
+
+                               <p>Please provide your details and we will be in touch quickly.</p>
+
+                               <form id='requestform' method="post" action="https://formspree.io/info@quarter.is">
+                                       <div class="row">
+                                               <div class="6u 12u(mobilep)">
+                                                       <input type="text" name="name" placeholder="Your name" />
+                                               </div>
+                                               <div class="6u 12u(mobilep)">
+                                                       <input type="email" name="email" placeholder="Email address" />
+                                               </div>
+                                       </div>
+                    <div class="row">
+                                               <div class="6u 12u(mobilep)">
+                                                       <input type="text" name="phone" placeholder="Phone number including country code" />
+                                               </div>
+                        <div class="6u 12u(mobilep)">
+                                                       <select name="service">
+                                <option value="">Select required service</option>
+                                <option value="freeconsult">Free consultation</option>
+                                <option value="vatrep">VAT Rep</option>
+                                <option value="vatrepplus">VAT Rep Plus</option>
+                                <option value="other">Other</option>
+                            </select>
+                                               </div>
+                                       </div>
+                                       <div class="row">
+                        <div class="12u">
+                                                       <textarea name="message" placeholder="Details on your requirements" rows="6"></textarea>
+                                               </div>
+                                       </div>
+                                       <div class="row">
+                                               <div class="12u">
+                                                       <ul class="actions">
+                                                               <li><input type="submit" value="Send request" /></li>
+                                                       </ul>
+                                               </div>
+                                       </div>
+                               </form>
+
+                <ul class="icons">
+                    <li><a href="https://www.facebook.com/quarterbokhald" class="icon fa-facebook"><span class="label">Facebook - Quarter</span></a></li>
+                    <li><a href="mailto:erla@quarter.is" class="icon fa-mail-reply"><span class="label">Email</span></a></li>
+                </ul>
+
+                <ul class="copyright">
+                    <li>Tel: +354 895-4655</li>
+                </ul>
                 <ul class="copyright">
                     <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
                     <li>Photographs: <a href="https://www.facebook.com/AntonBrinkPhotographer">Anton Brink</a>, <a href="https://unsplash.com/@didwee">Didier Weemaels</a></li>
@@ -254,6 +308,17 @@
                         'value': 1
                     });
                 });
+            </script>
+
+            <script>
+            $('#requestform').submit(function (e) {
+                alert('submitting!');
+                gtag('event', 'formSubmit', {
+                    'event_category': 'lead',
+                    'event_label': 'vatrep',
+                    'value': 1
+                });
+            });
             </script>
 	</body>
 </html>
