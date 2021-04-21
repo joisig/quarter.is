@@ -2300,26 +2300,21 @@
 			width: 100%;
 		}
 
-			table.default tbody tr {
-				border-bottom: solid 1px rgba(224, 224, 224, 0.75);
-			}
-
 				table.default tbody tr:nth-child(2n - 1) {
 					background: rgba(224, 224, 224, 0.15);
         }
-        table.default tbody tr:nth-child(2n - 1) td{
+        table.default tr:nth-child(2n - 1) td:first-child{
           background: #f8f8f8;
-          border-bottom: solid 1px #e7e7e7;
         }
 
 			table.default td {
         padding: 0.5em 1em 0.5em 1em;
+			}
+			table.default td:first-child, table.default th:first-child {
         background: #ffffff;
 			}
 
 			table.default th {
-        background: #ffffff;
-        border-bottom: solid 1px #e7e7e7;
 				color: #5b5b5b;
 				font-size: 0.8em;
 				font-weight: 700;
@@ -2335,9 +2330,6 @@
 				left: 0;
       }
       
-			table.default thead {
-				border-bottom: solid 1px rgba(224, 224, 224, 0.75);
-			}
 
 /* Button */
 
