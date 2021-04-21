@@ -2330,7 +2330,7 @@
 				text-transform: uppercase;
 			}
 
-      table.default tr > *, table.default th > * {
+      table.default tr > :first-child, table.default th > :first-child {
 				position: sticky;
 				left: 0;
       }

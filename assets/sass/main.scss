@@ -557,7 +557,7 @@
 				border-bottom: solid 1px _palette(border);
 			}
 
-			tr > *, th > * {
+			tr > :first-child, th > :first-child {
 				position: sticky;
 				left: 0;
 			}
