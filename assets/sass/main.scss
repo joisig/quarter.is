@@ -527,7 +527,10 @@
 
 					&:nth-child(2n - 1) {
 						background: _palette(border-bg);
-						td{ background: _palette(border-bg-hex); }
+						td{
+							background: _palette(border-bg-hex);
+							border-bottom: solid 1px _palette(border-hex);
+						}
 					}
 				}
 			}
@@ -539,6 +542,7 @@
 
 			th {
 				background: _palette(bg);
+				border-bottom: solid 1px _palette(border-hex);
 				color: _palette(fg-bold);
 				font-size: 0.8em;
 				font-weight: 700;
