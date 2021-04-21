@@ -523,16 +523,22 @@
 
 			tbody {
 				tr {
-					border-bottom: solid 1px _palette(border);
+					//border-bottom: solid 1px _palette(border);
 
 					&:nth-child(2n - 1) {
 						background: _palette(border-bg);
+						td:first-child{
+							background: _palette(border-bg-hex);
+						}
 					}
 				}
 			}
 
 			td {
 				padding: 0.5em 1em 0.5em 1em;
+			}
+			td:first-child, th:first-child {
+				background: _palette(bg);
 			}
 
 			th {
@@ -547,8 +553,14 @@
 			}
 
 			thead {
-				border-bottom: solid 1px _palette(border);
+				//border-bottom: solid 1px _palette(border);
 			}
+
+			tr > :first-child, th > :first-child {
+				position: sticky;
+				left: 0;
+			}
+			
 		}
 	}
 
